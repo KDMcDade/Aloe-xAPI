@@ -11,7 +11,7 @@ ADL.XAPIWrapper.changeConfig(conf);
  function checkUserName() {
   const list = RegExp(/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\"_:<>\?]/); //Unacceptable characters
   const player = GetPlayer(); //Creates StoryLine conenction
-  const goodNamejs = player.GetVar("userName"); //Gets eneterd name from StoryLine
+  const goodNamejs = player.GetVar("userName"); //Gets entered name from StoryLine
 
   if (list.test(goodNamejs)) {
     player.SetVar("specialCharacter", true); //Tells sToryLine to have user re-enter name
